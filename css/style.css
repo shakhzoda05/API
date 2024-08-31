@@ -1,0 +1,25 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+}
+.user,
+.post,
+.comment {
+  border: 4px solid #4e87e3;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.user h3,
+.post h4 {
+  margin: 0 0 10px;
+}
+.comment p {
+  margin: 5px 0;
+}
