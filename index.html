@@ -5,19 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSONPlaceholder API Data</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
     <style></style>
   </head>
   <body>
     <div class="container">
-      <h1>Users</h1>
-      <div id="users"></div>
+      <div class="all">
+        <div>
+          <h1 class="font-bold text-[35px] text-blue-400 hover:text-blue-500">
+            Users
+          </h1>
+          <div id="users"></div>
+        </div>
 
-      <h1>Posts</h1>
-      <div id="posts"></div>
+        <div>
+          <h1 class="font-bold text-[35px] text-blue-400 hover:text-blue-500">
+            Posts
+          </h1>
+          <div id="posts"></div>
+        </div>
 
-      <h1>Comments</h1>
-      <div id="comments"></div>
+        <div>
+          <h1 class="font-bold text-[35px] text-blue-400 hover:text-blue-500">
+            Comments
+          </h1>
+          <div id="comments"></div>
+        </div>
+      </div>
     </div>
-    <script src="js/main.js"></script>
   </body>
+
+  <script src="js/main.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
 </html>

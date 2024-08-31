@@ -1,4 +1,3 @@
-// Fetch and render users
 fetch("https://jsonplaceholder.typicode.com/users")
   .then((response) => response.json())
   .then((users) => {
@@ -16,7 +15,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
     });
   });
 
-// Fetch and render posts
 fetch("https://jsonplaceholder.typicode.com/posts")
   .then((response) => response.json())
   .then((posts) => {
@@ -32,7 +30,6 @@ fetch("https://jsonplaceholder.typicode.com/posts")
     });
   });
 
-// Fetch and render comments
 fetch("https://jsonplaceholder.typicode.com/comments")
   .then((response) => response.json())
   .then((comments) => {
